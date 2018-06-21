@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import moment from 'moment';
 import { connect } from 'react-redux';
+import { Link } from 'react-router-dom';
 
 import { Form } from '../../components/Article';
 
@@ -41,6 +42,7 @@ class Home extends React.Component {
         <div className="row pt-5">
           <div className="col-12 col-lg-6 offset-lg-3">
             <h1 className="text-center">LightBlog</h1>
+            <Link to="/map">Map</Link>
           </div>
           <Form />
         </div>
